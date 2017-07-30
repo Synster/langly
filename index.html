@@ -5,37 +5,44 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<link href="css/main.css" rel="stylesheet" />
+		<script src="js/loadjson.js"></script>
 	</head>
 	<body>
-		<div class="pj-alphabet-omkar size-md padTop_10"></div>
+		<div class="pj-alphabet-omkar size-sm padTop_10"></div>
 		<h1 class="page-heading size-md hide">Paaji Punjabi Paathsala</h1>
 
 		<h2 class="letter-heading size-sm">Letter of the day</h2>
-		<div class="pj-alphabet-a size-xl"></div>
-		<div class="other-lang size-sm">
-			<div class="hn-alphabet-a"></div>
-			<div class=>a</div>
+
+		<div id="dailyLetter" class="daily-letter size-xl">
+			<a href="#" class="prev">&larr; Prev</a>
+			<div class="letter"></div>
+			<div class="desc"></div>
+			<a href="#" class="next">Next &rarr;</a>
+		</div>
+		<div id="otherLang" class="other-lang size-sm">
+			<div class="hindi"></div>
+			<div class="english"></div>
 		</div>
 
-		<section class="word-info pronounication">
-			<h3>pronounication</h3>
+		<section id="pronunciation" class="word-info pronunciation">
+			<h3>pronunciation</h3>
 			<dl class="meta-list size-sm">
-				<dt>English</dt>
-				<dd>sassa</dd>
 				<dt>Hindi</dt>
-				<dd>sassa</dd>
+				<dd class="hindi">sassa</dd>
+				<dt>English</dt>
+				<dd class="english">sassa</dd>
 				<dt>Punjabi</dt>
-				<dd class="pj-alphabet-a"></dd>
+				<dd class="punjabi"></dd>
 			</dl>
 		</section>
 
-		<section class="word-info counterparts hide">
+		<section id="counterparts" class="word-info counterparts hide">
 			<h3>counterparts</h3>
 			<dl class="meta-list size-sm">
-				<dt>English</dt>
-				<dd>S</dd>
 				<dt>Hindi</dt>
-				<dd>S</dd>
+				<dd class="hindi"></dd>
+				<dt>English</dt>
+				<dd class="english"></dd>
 			</dl>
 		</section>
 
@@ -54,5 +61,7 @@
 				</li>
 			</ul>
 		</section>
+
+		<script src="js/index.js"></script>
 	</body>
 </html>

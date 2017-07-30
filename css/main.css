@@ -10,11 +10,11 @@ html, body {
 	padding: 0;
 	text-align: center;
 }
-.size-xs { font-size: 1em; }
-.size-sm { font-size: 2em; }
-.size-md { font-size: 3em; }
-.size-lg { font-size: 4em; }
-.size-xl { font-size: 6em; }
+.size-xs { font-size: 1rem; }
+.size-sm { font-size: 2rem; }
+.size-md { font-size: 3rem; }
+.size-lg { font-size: 4rem; }
+.size-xl { font-size: 6rem; }
 
 .hide { display: none !important; }
 .bold { font-weight: bold !important; }
@@ -62,7 +62,7 @@ html, body {
 	content: "\0A06";
 }
 
-[class*="pj-alphabet"] {
+[class*="hn-alphabet"] {
 	font-family: 'devanagari';
 }
 .hn-alphabet-a:before {
@@ -79,16 +79,46 @@ html, body {
 	display: inline-block;
 	width: 20%;
 }
+
+.daily-letter {
+	margin: 0 20px;
+	position: relative;
+}
+.daily-letter .desc {
+	font-size: 1rem;
+}
+.prev, .next {
+	font-style: italic;
+    font-size: 2rem;
+	margin-top: -25px;
+    position: absolute;
+	text-decoration: none;
+    top: 50%;
+}
+.prev:active,
+.next:active,
+.prev:focus,
+.next:focus {
+	color: #00f;
+}
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}
+
 .words-heading {
 	text-align: left;
 }
 .word-info {
+	background: rgba(255, 255, 255, 0.4);
 	margin: 0 20px;
 }
 .word-info h3 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-align: left;
-	width: 200px;
+	width: 175px;
 }
 
 .meta-list {
@@ -111,25 +141,25 @@ html, body {
 }
 .words-list li {
 	float: left;
-	font-size: 2em;
+	font-size: 2rem;
 	width: 25%;
 }
 
 
 
 @media only screen and (min-width: 768px) {
-	body {
+	html, body {
 		font-size: 16px;
 	}
 	.word-info {
-		margin-left: 20%;
+		padding: 0 20%;
 	}
 	.word-info h3 {
 		font-size: inherit;
 		float: left;
 	}
 	.meta-list dd {
-		margin-left: 40px; 
+		margin-right: 40px; 
 		width: 100px;
 	}
 	.words-list {
