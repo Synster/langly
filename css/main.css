@@ -1,0 +1,139 @@
+/* global rules */
+html {
+	height: 100%;
+}
+html, body {
+	background: linear-gradient(#ff0, #00f);
+	font-size: 12px;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.size-xs { font-size: 1em; }
+.size-sm { font-size: 2em; }
+.size-md { font-size: 3em; }
+.size-lg { font-size: 4em; }
+.size-xl { font-size: 6em; }
+
+.hide { display: none !important; }
+.bold { font-weight: bold !important; }
+.text-left { text-align: left !important; }
+
+.padTop_10 { padding-top: 10px !important; }
+
+/* custom fonts */
+@font-face {
+	font-family: 'gurumukhi';
+	font-style: normal;
+	font-weight: 400;
+
+	src: url(fonts/NotoSansGurmukhiUI-Regular.eot);
+	src: url(fonts/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/NotoSansGurmukhiUI-Regular.woff2) format('woff2'),
+		url(fonts/NotoSansGurmukhiUI-Regular.woff) format('woff'),
+		url(fonts/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'devanagari';
+	font-style: normal;
+	font-weight: 400;
+
+	src: url(fonts/NotoSansDevanagari-Regular.eot);
+	src: url(fonts/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/NotoSansDevanagari-Regular.woff2) format('woff2'),
+		url(fonts/NotoSansDevanagari-Regular.woff) format('woff'),
+		url(fonts/NotoSansDevanagari-Regular.ttf) format('truetype');
+}
+
+
+/* alphabets */
+[class*="pj-alphabet"] {
+	font-family: 'gurumukhi';
+}
+.pj-alphabet-omkar:before {
+	content: "\0A74";
+}
+.pj-alphabet-a:before {
+	content: "\0A05";
+}
+.pj-alphabet-aa:before {
+	content: "\0A06";
+}
+
+[class*="pj-alphabet"] {
+	font-family: 'devanagari';
+}
+.hn-alphabet-a:before {
+	content: "\0905";
+}
+
+
+
+/* page css */
+.page-heading {
+	margin: 50px auto;
+}
+.other-lang div {
+	display: inline-block;
+	width: 20%;
+}
+.words-heading {
+	text-align: left;
+}
+.word-info {
+	margin: 0 20px;
+}
+.word-info h3 {
+	font-size: 1.5em;
+	text-align: left;
+	width: 200px;
+}
+
+.meta-list {
+	text-align: left;
+}
+.meta-list dt,
+.meta-list dd {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	width: 30%;
+}
+.meta-list dt {
+	display: none;
+}
+
+.words-list {
+	list-style-type: none;
+	padding: 0;
+}
+.words-list li {
+	float: left;
+	font-size: 2em;
+	width: 25%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+	.word-info {
+		margin-left: 20%;
+	}
+	.word-info h3 {
+		font-size: inherit;
+		float: left;
+	}
+	.meta-list dd {
+		margin-left: 40px; 
+		width: 100px;
+	}
+	.words-list {
+		display: inline-block;
+		width: 75%;
+	}
+}
