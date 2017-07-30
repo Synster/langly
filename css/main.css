@@ -23,16 +23,17 @@ html, body {
 .padTop_10 { padding-top: 10px !important; }
 
 /* custom fonts */
+/*TODO: check if these fonts are needed at all*/
 @font-face {
 	font-family: 'gurumukhi';
 	font-style: normal;
 	font-weight: 400;
 
-	src: url(fonts/NotoSansGurmukhiUI-Regular.eot);
-	src: url(fonts/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'),
-		url(fonts/NotoSansGurmukhiUI-Regular.woff2) format('woff2'),
-		url(fonts/NotoSansGurmukhiUI-Regular.woff) format('woff'),
-		url(fonts/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
+	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot);
+	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff2) format('woff2'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff) format('woff'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -40,11 +41,11 @@ html, body {
 	font-style: normal;
 	font-weight: 400;
 
-	src: url(fonts/NotoSansDevanagari-Regular.eot);
-	src: url(fonts/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'),
-		url(fonts/NotoSansDevanagari-Regular.woff2) format('woff2'),
-		url(fonts/NotoSansDevanagari-Regular.woff) format('woff'),
-		url(fonts/NotoSansDevanagari-Regular.ttf) format('truetype');
+	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot);
+	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.woff2) format('woff2'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.woff) format('woff'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.ttf) format('truetype');
 }
 
 
