@@ -1,0 +1,170 @@
+/* global rules */
+html {
+	height: 100%;
+}
+html, body {
+	background: linear-gradient(#ff0, #00f);
+	font-size: 12px;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.size-xs { font-size: 1rem; }
+.size-sm { font-size: 2rem; }
+.size-md { font-size: 3rem; }
+.size-lg { font-size: 4rem; }
+.size-xl { font-size: 6rem; }
+
+.hide { display: none !important; }
+.bold { font-weight: bold !important; }
+.text-left { text-align: left !important; }
+
+.padTop_10 { padding-top: 10px !important; }
+
+/* custom fonts */
+/*TODO: check if these fonts are needed at all*/
+@font-face {
+	font-family: 'gurumukhi';
+	font-style: normal;
+	font-weight: 400;
+
+	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot);
+	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff2) format('woff2'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff) format('woff'),
+		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'devanagari';
+	font-style: normal;
+	font-weight: 400;
+
+	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot);
+	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.woff2) format('woff2'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.woff) format('woff'),
+		url(fonts/hindi/NotoSansDevanagari-Regular.ttf) format('truetype');
+}
+
+
+/* alphabets */
+[class*="pj-alphabet"] {
+	font-family: 'gurumukhi';
+}
+.pj-alphabet-omkar:before {
+	content: "\0A74";
+}
+.pj-alphabet-a:before {
+	content: "\0A05";
+}
+.pj-alphabet-aa:before {
+	content: "\0A06";
+}
+
+[class*="hn-alphabet"] {
+	font-family: 'devanagari';
+}
+.hn-alphabet-a:before {
+	content: "\0905";
+}
+
+
+
+/* page css */
+.page-heading {
+	margin: 50px auto;
+}
+.other-lang div {
+	display: inline-block;
+	width: 20%;
+}
+
+.daily-letter {
+	margin: 0 20px;
+	position: relative;
+}
+.daily-letter .desc {
+	font-size: 1rem;
+}
+.prev, .next {
+	font-style: italic;
+    font-size: 2rem;
+	margin-top: -25px;
+    position: absolute;
+	text-decoration: none;
+    top: 50%;
+}
+.prev:active,
+.next:active,
+.prev:focus,
+.next:focus {
+	color: #00f;
+}
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}
+
+.words-heading {
+	text-align: left;
+}
+.word-info {
+	background: rgba(255, 255, 255, 0.4);
+	margin: 0 20px;
+}
+.word-info h3 {
+	font-size: 1.5rem;
+	text-align: left;
+	width: 175px;
+}
+
+.meta-list {
+	text-align: left;
+}
+.meta-list dt,
+.meta-list dd {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	width: 30%;
+}
+.meta-list dt {
+	display: none;
+}
+
+.words-list {
+	list-style-type: none;
+	padding: 0;
+}
+.words-list li {
+	float: left;
+	font-size: 2rem;
+	width: 25%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	html, body {
+		font-size: 16px;
+	}
+	.word-info {
+		padding: 0 20%;
+	}
+	.word-info h3 {
+		font-size: inherit;
+		float: left;
+	}
+	.meta-list dd {
+		margin-right: 40px; 
+		width: 100px;
+	}
+	.words-list {
+		display: inline-block;
+		width: 75%;
+	}
+}
