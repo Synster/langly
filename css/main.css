@@ -1,20 +1,28 @@
 /* global rules */
-html {
-	height: 100%;
+html,body {
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px; 
 }
-html, body {
-	background: linear-gradient(#ff0, #00f);
-	font-size: 12px;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+     
+
+.wall {
+    background-image: url("../images/bg1.jpg");
+	background-color: rgba(0,0,0,1);
+	background-size: cover;
+	height:100%;
 }
+
+.overlay{
+	background-color: rgba(0,0,0,.49);
+	height:100%;
+}
+
 .size-xs { font-size: 1rem; }
 .size-sm { font-size: 2rem; }
 .size-md { font-size: 3rem; }
 .size-lg { font-size: 4rem; }
-.size-xl { font-size: 6rem; }
+.size-xl { font-size: 8rem; }
 
 .hide { display: none !important; }
 .bold { font-weight: bold !important; }
@@ -72,35 +80,34 @@ html, body {
 
 
 
-/* page css */
-.page-heading {
-	margin: 50px auto;
-}
 .other-lang div {
 	display: inline-block;
-	width: 20%;
+}
+
+.letter{
+  display: inline-block;
 }
 
 .daily-letter {
+	color: #af9f66;
 	margin: 0 20px;
-	position: relative;
+  position: relative;
+  text-align: center;
 }
-.daily-letter .desc {
-	font-size: 1rem;
-}
+
 .prev, .next {
 	font-style: italic;
-    font-size: 2rem;
-	margin-top: -25px;
-    position: absolute;
+    font-size: 4rem;
+    color: #ffffff;
+	    position: absolute;
 	text-decoration: none;
-    top: 50%;
+    
 }
 .prev:active,
 .next:active,
 .prev:focus,
 .next:focus {
-	color: #00f;
+	color: #ffffff;
 }
 .prev {
 	left: 0;
@@ -113,7 +120,7 @@ html, body {
 	text-align: left;
 }
 .word-info {
-	background: rgba(255, 255, 255, 0.4);
+	
 	margin: 0 20px;
 }
 .word-info h3 {
@@ -148,7 +155,7 @@ html, body {
 
 
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 	html, body {
 		font-size: 16px;
 	}
@@ -167,4 +174,100 @@ html, body {
 		display: inline-block;
 		width: 75%;
 	}
+} */
+
+* {
+  box-sizing: border-box;
 }
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;    
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
