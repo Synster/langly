@@ -1,28 +1,39 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Learn Punjabi Daily</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link href="css/main.css" rel="stylesheet" />
-		<script src="js/loadjson.js"></script>
-	</head>
-	<body>
-		<div class="pj-alphabet-omkar size-sm padTop_10"></div>
-		<h1 class="page-heading size-md hide">Paaji Punjabi Paathsala</h1>
 
-		<h2 class="letter-heading size-sm">Letter of the day</h2>
+<head>
+	<title>New Tab</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+	<link href="css/main.css" rel="stylesheet" />
+	<script src="js/loadjson.js"></script>
+</head>
 
-		<div id="dailyLetter" class="daily-letter size-xl">
-			<a href="#" class="prev">&larr; Prev</a>
-			<div class="letter"></div>
-			<div class="desc"></div>
-			<a href="#" class="next">Next &rarr;</a>
-		</div>
-		<div id="otherLang" class="other-lang size-sm">
-			<div class="hindi"></div>
-			<div class="english"></div>
-		</div>
+<body>
+	
+		<div class="wall">
+			<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="dailyLetter" class="daily-letter size-xl">
+							<div class="letter"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="prev">&lt;</a>
+					</div>
+					<div class="col-md-6">
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="next">&gt;</a>
+					</div>
+				</div>
+
+
+
 
 		
 <button id="play" type="button">PLay</button>
@@ -45,32 +56,55 @@ Your browser does not support the audio element.
 			</dl>
 		</section>
 
-		<section id="counterparts" class="word-info counterparts hide">
-			<h3>counterparts</h3>
-			<dl class="meta-list size-sm">
-				<dt>Hindi</dt>
-				<dd class="hindi"></dd>
-				<dt>English</dt>
-				<dd class="english"></dd>
-			</dl>
-		</section>
 
-		<section class="word-info words">
-			<h3 class="words-heading">words</h3>
-			<ul class="words-list">
-				<li class="">
-					<div class="lang-pj"><span class="pj-alphabet-a"></span></div>
-					<div class="lang-hn">sir</div>
-					<div class="lang-en">sir</div>
-				</li>
-				<li>
-					<div class="lang-pj"><span class="pj-alphabet-a"></span></div>
-					<div class="lang-hn">aam</div>
-					<div class="lang-en">aam (mango)</div>
-				</li>
-			</ul>
-		</section>
 
-		<script src="js/index.js"></script>
-	</body>
+			</div>
+			
+			<div id="otherLang" class="other-lang size-sm">
+				<div class="hindi"></div>
+				<div class="english"></div>
+			</div>
+
+			<section id="pronunciation" class="word-info pronunciation">
+				
+				<dl class="meta-list size-sm">
+					<dt>Hindi</dt>
+					<dd class="hindi">sassa</dd>
+					<dt>English</dt>
+					<dd class="english">sassa</dd>
+					<dt>Punjabi</dt>
+					<dd class="punjabi"></dd>
+				</dl>
+			</section>
+
+			<section id="counterparts" class="word-info counterparts hide">
+				<h3>counterparts</h3>
+				<dl class="meta-list size-sm">
+					<dt>Hindi</dt>
+					<dd class="hindi"></dd>
+					<dt>English</dt>
+					<dd class="english"></dd>
+				</dl>
+			</section>
+
+			<section class="word-info words">
+				<h3 class="words-heading">words</h3>
+				<ul class="words-list">
+					<li class="">
+						<div class="lang-pj"><span class="pj-alphabet-a"></span></div>
+						<div class="lang-hn">sir</div>
+						<div class="lang-en">sir</div>
+					</li>
+					<li>
+						<div class="lang-pj"><span class="pj-alphabet-a"></span></div>
+						<div class="lang-hn">aam</div>
+						<div class="lang-en">aam (mango)</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
 </html>
