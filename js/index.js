@@ -46,3 +46,8 @@ _dailyLetter.querySelector(".next").addEventListener("click", function(e) {
 		updateLetter(filteredData[filteredKeys[++count]]);
 	}
 });
+
+
+document.getElementById("play").addEventListener("click", function() {
+	document.getElementById("aud").play();
+});
