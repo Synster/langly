@@ -4,15 +4,60 @@
 <head>
 	<title>New Tab</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
 	<link href="css/main.css" rel="stylesheet" />
 	<script src="js/loadjson.js"></script>
 </head>
 
 <body>
-	
-		<div class="wall">
-			<div class="overlay">
+	<div class="wall">
+		<div class="container">
+			<div class="row first-row">
+				<div class="col-lg-2 col-md-2">
+					<div class="quicklinks">
+						<span>Links</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 top-right">
+					<div class="metric-stat">
+						<span class="metric-stat-number">21</span>
+						<span class="weather-degree">°</span>
+						<span class="unit hide">c</span>
+					</div>
+					<span class="location metric-label data" title="">Gurgaon</span>
+				</div>
+			</div>
+
+			<div class=" row middle-row">
+				<div class="col-md-12">
+					<div id="dailyLetter" class="daily-letter ">
+						<div class="box">
+							<div class="letter size-xl" onclick="PlaySound('airhaa')">ਅ</div>
+							<hr class="divider">
+							<span class="name">airhaa</span>
+							<span class="sound">Aa</span>
+							<div class="words">
+								<span>ਅਜ | ਅਗ | ਅਖ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row bottom-row">
+				<div class="col-lg-2 col-md-2">
+					<div class="setting">
+						<span>Settings</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 bottom-right">
+					<span class="more" title="">More</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="overlay">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -21,7 +66,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-3">
 						<a href="#" class="prev">&lt;</a>
 					</div>
@@ -30,14 +75,14 @@
 					<div class="col-md-3">
 						<a href="#" class="next">&gt;</a>
 					</div>
-				</div>
+				</div> -->
 
 
 
+		<!-- 
+			</div> -->
 
-			</div>
-			
-			<div id="otherLang" class="other-lang size-sm">
+		<!-- <div id="otherLang" class="other-lang size-sm">
 				<div class="hindi"></div>
 				<div class="english"></div>
 			</div>
@@ -79,7 +124,7 @@
 					</li>
 				</ul>
 			</section>
-		</div>
+		</div> -->
 	</div>
 	<script src="js/index.js"></script>
 </body>

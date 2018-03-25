@@ -46,3 +46,11 @@ _dailyLetter.querySelector(".next").addEventListener("click", function(e) {
 		updateLetter(filteredData[filteredKeys[++count]]);
 	}
 });
+
+function PlaySound(melody) {
+	
+	var path = "./audio/"
+	var snd = new Audio(path + melody + ".mp3");
+	console.log(path)
+	snd.play();
+};

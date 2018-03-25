@@ -1,159 +1,285 @@
 /* global rules */
-html,body {
-	height: 100%; 
-	margin: 0px; 
-	padding: 0px; 
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-     
 
 .wall {
-    background-image: url("../images/bg1.jpg");
-	background-color: rgba(0,0,0,1);
-	background-size: cover;
-	height:100%;
+  background-image: url("../images/downloaded.jpg");
+  background-size: cover;
+  height: 100%;
 }
 
-.overlay{
-	background-color: rgba(0,0,0,.49);
-	height:100%;
+.quicklinks {
+  padding-left: 25px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, .7);
+  transition: color .15s ease, text-shadow .15s ease;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
-.size-xs { font-size: 1rem; }
-.size-sm { font-size: 2rem; }
-.size-md { font-size: 3rem; }
-.size-lg { font-size: 4rem; }
-.size-xl { font-size: 8rem; }
+.first-row {
+  padding-top: 20px;
+}
 
-.hide { display: none !important; }
-.bold { font-weight: bold !important; }
-.text-left { text-align: left !important; }
+.bottom-row {
+  position: absolute;
+  padding-bottom: 20px;
+  bottom: 0;
+}
 
-.padTop_10 { padding-top: 10px !important; }
+.top-right {
+  position: absolute;
+  padding-right: 25px;
+  right: 0;
+  text-align: right
+}
+
+.middle-row {
+  position: absolute;
+  top: 30%
+}
+
+.bottom-right {
+  position: absolute;
+  padding-right: 25px;
+  right: 0;
+  text-align: right
+}
+
+.setting {
+  padding-left: 25px;
+  opacity: .7;
+  font-size: 85%;
+}
+
+.metric-stat {
+  margin-left: 5px;
+  display: block;
+  position: relative;
+  font-size: 150%;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.weather-degree {
+  margin-left: -7px;
+}
+
+.metric-label {
+  min-height: 13px;
+  margin: 0 -1px;
+  padding: 3px 1px 2px;
+  display: inline-block;
+  font-size: 85%;
+  font-weight: 500;
+  opacity: .7;
+}
+
+.more {
+  font-size: 85%;
+  font-weight: 500;
+  opacity: .7;
+}
+
+.size-xs {
+  font-size: 1rem;
+}
+
+.size-sm {
+  font-size: 2rem;
+}
+
+.size-md {
+  font-size: 3rem;
+}
+
+.size-lg {
+  font-size: 4rem;
+}
+
+.size-xl {
+  font-size: 8rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.padTop_10 {
+  padding-top: 10px !important;
+}
 
 /* custom fonts */
+
 /*TODO: check if these fonts are needed at all*/
-@font-face {
-	font-family: 'gurumukhi';
-	font-style: normal;
-	font-weight: 400;
 
-	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot);
-	src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'),
-		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff2) format('woff2'),
-		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff) format('woff'),
-		url(fonts/punjabi/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
+@font-face {
+  font-family: 'gurumukhi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot);
+  src: url(fonts/punjabi/NotoSansGurmukhiUI-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff2) format('woff2'), url(fonts/punjabi/NotoSansGurmukhiUI-Regular.woff) format('woff'), url(fonts/punjabi/NotoSansGurmukhiUI-Regular.ttf) format('truetype');
 }
 
 @font-face {
-	font-family: 'devanagari';
-	font-style: normal;
-	font-weight: 400;
-
-	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot);
-	src: url(fonts/hindi/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'),
-		url(fonts/hindi/NotoSansDevanagari-Regular.woff2) format('woff2'),
-		url(fonts/hindi/NotoSansDevanagari-Regular.woff) format('woff'),
-		url(fonts/hindi/NotoSansDevanagari-Regular.ttf) format('truetype');
+  font-family: 'devanagari';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/hindi/NotoSansDevanagari-Regular.eot);
+  src: url(fonts/hindi/NotoSansDevanagari-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/hindi/NotoSansDevanagari-Regular.woff2) format('woff2'), url(fonts/hindi/NotoSansDevanagari-Regular.woff) format('woff'), url(fonts/hindi/NotoSansDevanagari-Regular.ttf) format('truetype');
 }
-
 
 /* alphabets */
+
 [class*="pj-alphabet"] {
-	font-family: 'gurumukhi';
+  font-family: 'gurumukhi';
 }
+
 .pj-alphabet-omkar:before {
-	content: "\0A74";
+  content: "\0A74";
 }
+
 .pj-alphabet-a:before {
-	content: "\0A05";
+  content: "\0A05";
 }
+
 .pj-alphabet-aa:before {
-	content: "\0A06";
+  content: "\0A06";
 }
 
 [class*="hn-alphabet"] {
-	font-family: 'devanagari';
+  font-family: 'devanagari';
 }
+
 .hn-alphabet-a:before {
-	content: "\0905";
+  content: "\0905";
 }
-
-
 
 .other-lang div {
-	display: inline-block;
-}
-
-.letter{
   display: inline-block;
 }
 
-.daily-letter {
-	color: #af9f66;
-	margin: 0 20px;
-  position: relative;
-  text-align: center;
+.letter {
+  display: inline-block;
 }
 
-.prev, .next {
-	font-style: italic;
-    font-size: 4rem;
-    color: #ffffff;
-	    position: absolute;
-	text-decoration: none;
-    
+.name {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  opacity: .7;
+  font-size: 85%;
 }
+
+.words {
+  padding: 10px 0;
+}
+
+.sound {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  opacity: .7;
+  font-size: 85%;
+}
+
+.daily-letter {
+  color: #fff;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 0 4em;
+}
+
+.box {
+  border: 2px solid #fff;
+  margin-right: 40%;
+  margin-left: 40%;
+  position: relative;
+}
+
+.prev,
+.next {
+  font-style: italic;
+  font-size: 4rem;
+  color: #ffffff;
+  position: absolute;
+  text-decoration: none;
+}
+
 .prev:active,
 .next:active,
 .prev:focus,
 .next:focus {
-	color: #ffffff;
+  color: #ffffff;
 }
+
 .prev {
-	left: 0;
+  left: 0;
 }
+
 .next {
-	right: 0;
+  right: 0;
 }
 
 .words-heading {
-	text-align: left;
+  text-align: left;
 }
+
 .word-info {
-	
-	margin: 0 20px;
+  margin: 0 20px;
 }
+
 .word-info h3 {
-	font-size: 1.5rem;
-	text-align: left;
-	width: 175px;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 175px;
 }
 
 .meta-list {
-	text-align: left;
+  text-align: left;
 }
+
 .meta-list dt,
 .meta-list dd {
-	display: inline-block;
-	margin: 0;
-	text-align: center;
-	width: 30%;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  width: 30%;
 }
+
 .meta-list dt {
-	display: none;
+  display: none;
 }
 
 .words-list {
-	list-style-type: none;
-	padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
+
 .words-list li {
-	float: left;
-	font-size: 2rem;
-	width: 25%;
+  float: left;
+  font-size: 2rem;
+  width: 25%;
 }
-
-
 
 /* @media only screen and (min-width: 768px) {
 	html, body {
@@ -181,14 +307,27 @@ html,body {
 }
 
 /* Simple Responsive Framework. */
+
 .row {
   width: 100%;
 }
 
 /********** Desktop View **********/
+
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;    
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -227,11 +366,23 @@ html,body {
     width: 100%;
   }
 }
+
 /********** Tablet View **********/
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
     float: left;
-    
   }
   .col-md-1 {
     width: 8.33%;
@@ -270,4 +421,3 @@ html,body {
     width: 100%;
   }
 }
-
